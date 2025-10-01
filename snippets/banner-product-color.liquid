@@ -1,0 +1,58 @@
+{% comment %}
+  Banner Product Color Snippet
+  Usage:
+    {% render 'banner-product-color', banner_product_item: banner_product_item %}
+{% endcomment %}
+
+{% assign color_option = banner_product_item.options_with_values | where: 'name', 'Color' | first %}
+{% assign fallback_select_color_text = 'Виберіть колір:' %}
+
+{%- if color_option -%}
+  <div class="card-info-images">
+    <p>{{ 'products.banner.select_color' | t: default: fallback_select_color_text }}</p>
+    <div class="card-img">
+      {%- for color in color_option.values limit: 3 -%}
+        {% assign variant = banner_product_item.variants | where: 'option1', color | first %}
+
+        {%- if variant.featured_image != blank -%}
+          {% assign thumb_url = variant.featured_image | image_url: '88x88' %}
+          <img
+            src="{{ thumb_url | image_url }}"
+            data-color="{{ color | downcase }}"
+            data-qty="{{ variant.inventory_quantity }}"
+            data-available="{{ variant.available }}"
+            data-variant-id="{{ variant.id }}"
+            alt="{{ banner_product_item.title | escape }} {{ color }}"
+            loading="lazy"
+            height="88"
+            width="88"
+            {%- if forloop.first -%}
+              class="active"
+            {%- endif -%}
+          >
+        {%- else -%}
+          <button
+            class="thumb-btn {% if forloop.first %} active {% endif %}"
+            data-color="{{ color | downcase }}"
+            data-variant-id="{{ variant.id }}"
+            data-qty="{{ variant.inventory_quantity }}"
+            data-available="{{ variant.available }}"
+            aria-label="{{ banner_product_item.title | escape }} {{ color }}"
+            type="button"
+          >
+            {{ 'product-2' | placeholder_svg_tag: 'placeholder-img' }}
+          </button>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+
+    <div
+      id="color-stock-msg"
+      class="stock-message"
+      data-available="{{ 'products.banner.available_with_count' | t }}"
+      data-unavailable="{{ 'products.banner.not_available' | t }}"
+    ></div>
+  </div>
+{%- else -%}
+  <p class="no-color">{{ 'products.banner.no_color_option' | t }}</p>
+{%- endif -%}

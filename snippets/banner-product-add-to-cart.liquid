@@ -1,0 +1,15 @@
+{% comment %}
+  Banner Product Add To Cart snippet
+  Usage:
+    {% render 'banner-product-add-to-cart', banner_product_item: banner_product_item %}
+{% endcomment %}
+
+{%- assign fallback_add_to_bag_text = 'Додати до кошика' -%}
+
+<form method="post" action="{{ routes.cart_add_url }}" class="add-to-cart-form">
+  <input type="hidden" name="id" value="{{ banner_product_item.variants.first.id }}">
+  <input type="hidden" name="quantity" value="1">
+  <button type="submit" class="add-btn" aria-label="Add To Bag">
+    {{ 'products.banner.add_to_bag' | t: default: fallback_add_to_bag_text }}
+  </button>
+</form>

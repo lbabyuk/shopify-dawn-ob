@@ -1,0 +1,103 @@
+{%- comment -%}
+  Banner product snippet
+  Usage:
+    {% render 'banner-product', handle: 'nike-air-max-plus' %}
+    {% render 'banner-product', product: product %}
+{%- endcomment -%}
+
+{{ 'banner-product.css' | asset_url | stylesheet_tag }}
+
+{%- assign banner_product_item = product | default: all_products[handle] -%}
+{%- assign fallback_description_text = 'Виділяйся у Nike Air Max Plus — кросівки з технологією Tuned Air для виняткової стабільності та неймовірного комфорту.' -%}
+
+{%- if banner_product_item == blank -%}
+  {% render 'banner-product-not-found' %}
+  {%- break -%}
+
+{%- else -%}
+  <section class="section-card" id="card-{{ banner_product_item.id }}">
+    <div class="card-wrapper">
+      <div class="card-slider">
+        <div class="swiper thumbs">
+          <div class="swiper-wrapper">
+            {%- for image in banner_product_item.images -%}
+              {% assign variant = banner_product_item.variants | where: 'featured_image', image | first %}
+              {% assign main_image_url = image | image_url: '536x' %}
+              {% assign thumb_image_url = image | image_url: '88x88' %}
+
+              <div
+                class="swiper-slide"
+                data-color="{{ variant.option1 | default: 'default' | downcase }}"
+                data-price="{{ variant.price | divided_by: 100 }}"
+                data-main="{{ main_image_url }}"
+              >
+                {%- if image != blank -%}
+                  <img
+                    src="{{ thumb_image_url | default: image | image_url }}"
+                    alt="{{ banner_product_item.title | escape }} {{ variant.option1 }}"
+                    loading="lazy"
+                    height="88"
+                    width="88"
+                  >
+                {% else %}
+                  {{ 'product-2' | placeholder_svg_tag: 'placeholder-img' }}
+                {%- endif -%}
+              </div>
+            {%- endfor -%}
+          </div>
+        </div>
+
+        <div class="swiper main">
+          <div class="swiper-wrapper">
+            {%- for image in banner_product_item.images -%}
+              {% assign variant = banner_product_item.variants | where: 'featured_image', image | first %}
+              {% assign main_image_url = image | image_url: '536x' %}
+              <div class="swiper-slide">
+                <div class="image-wrapper">
+                  {%- if image != blank -%}
+                    <img
+                      src="{{ main_image_url | default: image | image_url }}"
+                      alt="{{ banner_product_item.title | escape }} {{ variant.option1 | default: '' }}"
+                      loading="lazy"
+                      height="536"
+                      width="536"
+                    >
+                  {% else %}
+                    {{ 'product-2' | placeholder_svg_tag: 'placeholder-main-img' }}
+                  {%- endif -%}
+                  <span class="badge">Top Choice</span>
+                </div>
+              </div>
+            {%- endfor -%}
+          </div>
+        </div>
+      </div>
+
+      <div class="card-info">
+        <div class="card-info-heading">
+          <h2 class="card-info-title">
+            {% if banner_product_item.title != blank %}
+              {{- banner_product_item.title | escape -}}
+            {% else %}
+              {{- 'products.banner.default_title' | t -}}
+            {% endif %}
+          </h2>
+
+          {% render 'banner-product-price', banner_product_item: banner_product_item %}
+        </div>
+
+        {% render 'banner-product-color', banner_product_item: banner_product_item %}
+
+        {% render 'banner-product-shoe-size', banner_product_item: banner_product_item %}
+
+        {% render 'banner-product-add-to-cart', banner_product_item: banner_product_item %}
+
+        <div class="text-info">
+          {{- 'products.banner.description' | t: default: fallback_description_text -}}
+        </div>
+      </div>
+    </div>
+  </section>
+{%- endif -%}
+
+<script src="{{ 'banner-product-script.js' | asset_url }}" defer></script>

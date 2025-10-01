@@ -1,0 +1,18 @@
+{%- comment -%}
+  Banner product price snippet
+  Usage:
+    {% render 'banner-product-price', banner_product_item: banner_product_item %}
+{%- endcomment -%}
+
+{% assign first_variant = banner_product_item.variants.first %}
+{% if first_variant.price != blank and first_variant.price != null %}
+  {% capture product_price_html %}
+    {%- if first_variant.compare_at_price > first_variant.price -%}
+      <s class="price-old">{{ first_variant.compare_at_price | money }}</s>
+      <span class="price-sale">{{ first_variant.price | money }}</span>
+      {%- else -%}
+        <span class="price">{{ first_variant.price | money }}</span>
+      {%- endif -%}
+      {% endcapture %}
+  <p class="card-info-price">{{- product_price_html -}}</p>
+{% endif %}
