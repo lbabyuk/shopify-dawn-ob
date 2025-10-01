@@ -1,0 +1,19 @@
+{%- comment -%}
+  Banner product shoe size snippet
+  Usage:
+    {% render 'banner-product-shoe-size', banner_product_item: banner_product_item %}
+{%- endcomment -%}
+
+{% assign size_option = banner_product_item.options_with_values | where: 'name', 'Shoe size' | first %}
+{%- assign fallback_select_size_text = 'Виберіть розмір:' -%}
+
+{%- if size_option -%}
+  <div class="card-tabs">
+    <p>{{ 'products.banner.select_size' | t: default: fallback_select_size_text }}</p>
+    <ul class="tabs-list">
+      {%- for size in size_option.values -%}
+        <li class="tabs-item {% if forloop.first %}active{% endif %}">{{ size }}</li>
+      {%- endfor -%}
+    </ul>
+  </div>
+{%- endif -%}

@@ -1,0 +1,15 @@
+{%- comment -%}
+  Banner product not found snippet
+  Usage:
+    {% render 'banner-product-not-found' %}
+{%- endcomment -%}
+
+{%- assign banner_product_not_found_fallback = 'Товар не знайдено' -%}
+
+<section class="section-banner-product" id="banner-product">
+  <div class="title-wrapper center">
+    <h2 class="title title--primary">
+      {{ 'products.banner.not_found' | t: default: banner_product_not_found_fallback | escape }}
+    </h2>
+  </div>
+</section>
