@@ -398,6 +398,270 @@
             "one": "%{shipping_price} для додаткової доставки %{count}, а потім %{recurring_order_shipping_price}"
           }
         }
+      },
+      "payment": {
+        "billing_must_match_shipping_notice": "Платіжна адреса вашого способу оплати має збігатися з адресою доставки.",
+        "same_billing_address_checkbox_label": "Використовувати адресу доставки як платіжну адресу",
+        "location_billing_address_label": "Платіжна адреса місцезнаходження",
+        "fact_billing_address_label": "Платіжна адреса",
+        "location_shipping_address_label": "Адреса доставки",
+        "use_order_billing_address_label": "Використати платіжну адресу замовлення",
+        "use_location_billing_address_label": "Використовувати платіжну адресу місцезнаходження",
+        "use_location_shipping_address_label": "Використовувати адресу доставки за місцем розташування",
+        "no_working_method_error": "Цей магазин зараз не може приймати платежі. Оновіть цю сторінку або поверніться пізніше.",
+        "brand_not_available": "Цей магазин не приймає {{brand}} . Будь ласка, скористайтеся іншою карткою для оплати.",
+        "shipping_rate_updated": "Доступні способи доставки оновлено. Підтвердьте свій вибір перед оформленням замовлення.",
+        "billing_address_invalid_phone": "Щоб продовжити, оновіть номер телефону у вашій платіжній адресі для {{label}} {{last_digits}} .",
+        "billing_address_invalid_phone_no_card": "Щоб продовжити, оновіть номер телефону у своїй платіжній адресі.",
+        "preview_not_available": {
+          "title": "Попередній перегляд недоступний",
+          "content": "Не хвилюйтеся, ця експрес-оплата працює для ваших клієнтів.",
+          "button": "Гаразд"
+        },
+        "card_fields": {
+          "errors": {
+            "required": {
+              "issue_date": "Введіть дійсну дату видачі",
+              "issue_number": "Введіть дійсний номер випуску"
+            },
+            "invalid": {
+              "verification_value": "Введіть дійсний CVV або код безпеки"
+            }
+          }
+        },
+        "simulated_checkout": "Попередній перегляд буде доступний незабаром",
+        "simulated_express_checkout": "Гаманці недоступні в попередньому перегляді редактора через ваш регіон або браузер",
+        "vaulting_agreement_label": "Зберегти мою платіжну інформацію у %{company} для швидшого оформлення замовлення.",
+        "business_customer_vaulting_payment_label": "Збережіть цей спосіб оплати під час оформлення замовлення та уповноважте %{company} стягувати з нього кошти за майбутні покупки в цьому місці. Усі контакти, призначені цьому місцю, можуть використовувати цей спосіб оплати.",
+        "purchase_options_and_vaulting_agreement_label": "Один або декілька товарів у вашому кошику є відкладеною покупкою або покупкою за підпискою. Продовжуючи оплату, ви погоджуєтеся з тим, що з вашого способу оплати буде автоматично стягуватися плата за ціною та з частотою, зазначеними на цій сторінці, доки не завершиться термін дії або ви не скасуєте замовлення. Усі скасування підлягають %{cancellation_policy_label}.",
+        "purchase_options_cancellation_policy_label": "політика скасування",
+        "use_different_credit_card_label": "Використати іншу картку",
+        "saved_credit_card": "Ваша збережена кредитна картка",
+        "saved_credit_card_info": "Останні чотири цифри",
+        "saved_credit_card_cvv_verification": "Для цілей перевірки, будь ласка, введіть код безпеки вашої картки.",
+        "saved_credit_card_actions": {
+          "edit": "Редагувати",
+          "delete": "Видалити"
+        },
+        "saved_credit_cards_modal": {
+          "view_all_label": "Переглянути всі збережені картки",
+          "done": "Готово",
+          "cancel": "Скасувати"
+        },
+        "add_credit_card_modal": {
+          "title": "Додати картку",
+          "save": "Зберегти",
+          "cancel": "Скасувати"
+        },
+        "delete_credit_card_modal": {
+          "title": "Видалити картку",
+          "confirmation": "Ви впевнені, що хочете видалити {{brandName}} що закінчується на {{lastDigits}} ?",
+          "cancel": "Скасувати",
+          "delete": "Видалити"
+        },
+        "edit_credit_card_modal": {
+          "title": "Редагувати картку",
+          "done": "Готово",
+          "cancel": "Скасувати",
+          "description": "Ви можете змінити лише платіжну адресу вашої картки.",
+          "fields": {
+            "default": "Встановити за замовчуванням",
+            "card_number": "Номер картки",
+            "expiry": "Термін дії",
+            "security_code": "Код безпеки",
+            "name": "Ім'я на картці",
+            "billing": "Рахунок на ім'я"
+          }
+        },
+        "expired_cards_info": {
+          "one": "Ви можете переглянути та відредагувати термін дії картки %{count} у своєму обліковому записі.",
+          "other": "Ви можете переглянути та редагувати у своєму обліковому записі %{count} карток із закінченим терміном дії."
+        },
+        "local_payment_method_receiver_notice": "Після оформлення замовлення ви отримаєте платіжні реквізити. Здійсніть оплату в банкоматі або онлайн протягом {{dueDays}} днів.",
+        "order_edit_banner_title": "Потрібно сплатити {{amount_owed}}",
+        "order_edit_banner_subtitle": "Ваше замовлення {{order_number}} оновлено. Перегляньте ці зміни, а потім оплатіть, щоб підтвердити своє замовлення.",
+        "order_edit_banner_items_added": {
+          "one": "Додано",
+          "other": "Додано %{count}"
+        },
+        "order_edit_banner_items_removed": {
+          "in_full": "Видалено",
+          "with_quantities": "Видалено {{delta}} з {{quantity}}"
+        },
+        "order_edit_banner_items_returned": {
+          "in_full": "Повернуто {{quantity}}",
+          "with_quantities": "Повернуто {{delta}} з {{quantity}}"
+        },
+        "order_edit_banner_items_return_line_item_removed": {
+          "in_full": "Вилучено з повернення",
+          "with_quantities": "Видалено {{delta}} з повернення"
+        },
+        "order_edit_banner_single_item_added": "Додано",
+        "order_edit_banner_multiple_items_added": "Додано {{amount}}",
+        "order_edit_banner_single_item_removed": "Видалено",
+        "order_edit_banner_multiple_items_removed": "Видалено {{amount}}",
+        "order_edit_banner_single_item_returned": "Повернуто",
+        "order_edit_banner_multiple_items_returned": "Повернуто {{amount}}",
+        "order_edit_banner_single_item_return_line_item_removed": "Вилучено з повернення",
+        "order_edit_banner_multiple_items_return_line_item_removed": "Видалено {{amount}} з повернення",
+        "order_edit_banner_updated_order_label": "Оновлене замовлення",
+        "gift_card_wrapper": {
+          "heading": "Подарункова карта",
+          "apply_gift_card_label": "Застосувати подарункову карту",
+          "apply_another_gift_card_label": "Застосувати ще одну подарункову карту",
+          "gift_card_label": "Подарункова карта %{identifier}",
+          "payment_tag": "Подарункова карта",
+          "add_label": "Додати подарункову карту",
+          "manage_label": "Керування подарунковими картками"
+        },
+        "gift_card_store_credit": {
+          "add_label": "Додати подарункову карту або кредит магазину",
+          "manage_label": "Керування подарунковими картками або кредитом магазину"
+        },
+        "gift_card_checkbox_label": "Застосувати подарункову карту",
+        "custom_onsite_payment_method_modal": {
+          "title": "Підтвердження оплати на місці"
+        },
+        "markets_pro_disclaimer_label": "Натискаючи нижче та завершуючи замовлення, ви погоджуєтеся придбати ваш(і) товар(и) у Global-e як у офіційного продавця для цієї транзакції, відповідно до умов %{markets_pro_terms} та %{privacy_policy} Global-e. Global-e є міжнародним постачальником послуг виконання замовлень для %{shop_name}.",
+        "markets_pro_disclaimer_terms_and_conditions": "Умови та положення",
+        "markets_pro_disclaimer_privacy_policy": "Політика конфіденційності",
+        "markets_pro_disclaimer_terms_and_conditions_title": "Умови та положення зареєстрованого продавця",
+        "markets_pro_disclaimer_privacy_policy_title": "Політика конфіденційності зареєстрованого продавця",
+        "markets_pro_disclaimer_label_express_checkout": "Купуючи, ви погоджуєтеся з умовами %{markets_pro_terms} та %{privacy_policy} компанії Global-e, нашого міжнародного постачальника послуг.",
+        "markets_pro_disclaimer_express_terms_and_conditions": "умови",
+        "markets_pro_disclaimer_express_privacy_policy": "політика конфіденційності",
+        "purchase_order_number": {
+          "title": "Номер замовлення на замовлення",
+          "label": "Номер замовлення на замовлення (необов'язково)"
+        },
+        "alternative_payment_currency_total_notice": "Примітка: з вас буде стягнуто %{amount_due}.",
+        "alternative_payment_currency_total_manual_payment_notice": "Примітка: конвертована сума становить %{amount_due}.",
+        "waiting_on_taxes_message": "Якщо ваші податки не розрахуються протягом наступних кількох секунд, оновіть сторінку.",
+        "waiting_on_taxes_notice": "Розрахунок податків",
+        "payment_method": "Спосіб оплати",
+        "payment_method_rollup_accessibility_label": "Варіанти способів оплати"
+      },
+      "payment_gateway": {
+        "order_due_on_receipt_choose_later": "Ваш платіж буде здійснено після отримання.",
+        "order_deposit_due_now": "{{depositAmount}} має бути сплачено сьогодні. Залишок коштів на умовах {{translatedName}} має бути сплачений {{dueDate}} .",
+        "order_deposit_due_on_fulfillment": "Сплата {{depositAmount}} має бути здійснена сьогодні. Залишок коштів буде сплачено після виконання вашого замовлення.",
+        "order_deposit_due_on_receipt": "{{depositAmount}} має бути сплачено сьогодні. Залишок буде сплачено пізніше.",
+        "order_deposit_due_on_fixed_date": "{{depositAmount}} має бути сплачено сьогодні. Залишок буде сплачено {{dueDate}} .",
+        "draft_order_payment_due_later_no_terms": "Ваш платіж буде здійснено після підтвердження вашого замовлення.",
+        "draft_order_payment_due_later_no_terms_payment_selected": "Кошти з вашої картки будуть списані після підтвердження вашого замовлення.",
+        "draft_order_payment_due_later_terms": "Після підтвердження вашого замовлення ви будете на умовах {{translatedName}} .",
+        "draft_order_payment_due_on_fulfillment": "Ваш платіж буде здійснено після підтвердження та виконання вашого замовлення.",
+        "draft_order_deposit_due_later": "{{depositAmount}} буде сплачена після підтвердження вашого замовлення. Залишок коштів буде на умовах {{translatedName}} .",
+        "draft_order_deposit_due_on_fulfillment": "{{depositAmount}} буде сплачена після підтвердження вашого замовлення. Залишок коштів буде нараховано після виконання вашого замовлення."
+      },
+      "thank_you": {
+        "title": "Дякуємо за вашу покупку!",
+        "confirmation_email_sent_text": "Лист із підтвердженням надіслано на адресу %{email}",
+        "return_to_store_link_label": "Продовжити покупки",
+        "print_link_label": "Роздрукувати квитанцію",
+        "payment_information_title": "Інформація про оплату",
+        "shipping_information_title": "Інформація про доставку",
+        "page_title": "Дякую, %{display_name}!",
+        "page_title_no_name": "Дякую!",
+        "purchase_order_number_title": "Номер замовлення на замовлення #%{purchase_order_number}",
+        "cancelled_page_title": "Замовлення скасовано",
+        "failed_pending_payment_page_title": "Виникла проблема з вашим платежем",
+        "customer_information_title": "Деталі замовлення",
+        "contact_information_title": "Контактна інформація",
+        "billing_address_title": "Платіжна адреса",
+        "company_location_title": "Розташування",
+        "shipping_address_title": "Адреса доставки",
+        "shipping_address_map_title": "Карта Google, що відображає точку адреси доставки: %{address}",
+        "payment_method_title": "Спосіб оплати",
+        "payment_method_not_charged": "Не стягується плата",
+        "shipping_method_title": "Спосіб доставки",
+        "tracking_number": "Номер відстеження:",
+        "company_tracking_number": "Номер відстеження %{company}:",
+        "estimated_arrival": "Орієнтовна дата доставки: ",
+        "estimated_delivery": "Поточна оцінка доставки: ",
+        "re-order": "Повторно замовити ті самі товари",
+        "confirmed": "Підтверджено",
+        "confirmed_items_count": "%{confirmed_count} з %{total_count} елементів підтверджено",
+        "items_fulfilled_by_store": {
+          "one": "Придбані вами товари будуть доставлені з %{remote_shop_name}.",
+          "other": "Придбані вами товари будуть з інших магазинів."
+        },
+        "gift_card_confirmation_by_text": "Якщо ви не отримали його, надішліть SMS ще раз або зв'яжіться з нами.",
+        "gift_card_confirmation_by_email": "Якщо ви не отримали його, надішліть електронного листа ще раз або зв’яжіться з нами.",
+        "gift_card_title": "Подарункові картки",
+        "resend_gift_cards": "Повторно надіслати подарункові картки",
+        "thank_you_title": "Ваше замовлення підтверджено",
+        "thank_you_title_payment": "Ваш платіж підтверджено",
+        "thank_you_title_review": "Ваше замовлення надіслано на розгляд",
+        "thank_you_title_payments_app_pending_default": "Ваш платіж обробляється",
+        "thank_you_title_payments_app_pending_buyer_action_required": "Ваше замовлення отримано",
+        "thank_you_title_payments_app_failed_pending_payment": "Ваш платіж не вдалося обробити",
+        "thank_you_confirmed_orders_with_email_description": {
+          "one": "Ви незабаром отримаєте електронний лист із підтвердженням",
+          "other": "Незабаром ви отримаєте окремі електронні листи з підтвердженням від кожного магазину"
+        },
+        "thank_you_confirmed_orders_with_phone_description": {
+          "one": "Ви незабаром отримаєте SMS-підтвердження",
+          "other": "Незабаром ви отримаєте окремі текстові повідомлення з підтвердженням від кожного магазину"
+        },
+        "thank_you_confirmed_orders_with_email_and_phone_description": {
+          "one": "Ви незабаром отримаєте електронний лист із підтвердженням",
+          "other": "Незабаром ви отримаєте окремі електронні листи з підтвердженням від кожного магазину"
+        },
+        "thank_you_confirmed_order_with_email": "Незабаром ви отримаєте електронний лист із підтвердженням та номером вашого замовлення.",
+        "thank_you_confirmed_order_with_phone": "Незабаром ви отримаєте SMS-підтвердження з номером вашого замовлення.",
+        "thank_you_confirmed_order_with_email_and_phone": "Незабаром ви отримаєте електронний лист із підтвердженням та номером вашого замовлення.",
+        "thank_you_confirmed_orders_with_email": "Незабаром ви отримаєте окремі електронні листи з підтвердженням та номерами ваших замовлень",
+        "thank_you_confirmed_orders_with_phone": "Незабаром ви отримаєте окремі текстові повідомлення з підтвердженням та номерами ваших замовлень",
+        "thank_you_confirmed_orders_with_email_and_phone": "Незабаром ви отримаєте окремі електронні листи з підтвердженням та номерами ваших замовлень",
+        "thank_you_confirmed_order_with_email_payment": "Ви здійснили платіж за ваше замовлення %{date}.",
+        "thank_you_confirmed_order_with_phone_payment": "Ви здійснили платіж за ваше замовлення %{date}.",
+        "thank_you_confirmed_order_with_email_and_phone_payment": "Ви здійснили платіж за ваше замовлення %{date}.",
+        "thank_you_confirmed_order_with_email_pick_up": "Ви отримаєте електронний лист, коли ваше замовлення буде готове до отримання.",
+        "thank_you_confirmed_order_with_phone_pick_up": "Ви отримаєте SMS-повідомлення, коли ваше замовлення буде готове до отримання.",
+        "thank_you_confirmed_order_with_email_and_phone_pick_up": "Ви отримаєте електронний лист, коли ваше замовлення буде готове до отримання.",
+        "thank_you_confirmed_order_with_missing": "Зв'яжіться з нами електронною поштою або телефоном, щоб отримати підтвердження замовлення.",
+        "thank_you_confirmed_order_with_missing_payment": "Зв'яжіться з нами електронною поштою або телефоном, щоб отримати підтвердження замовлення.",
+        "thank_you_confirmed_order_with_missing_pick_up": "Зв'яжіться з нами електронною поштою або телефоном, щоб отримати підтвердження замовлення.",
+        "thank_you_confirmed_order_with_draft": "Ми повідомимо вас, якщо нам знадобиться додаткова інформація або коли ваше замовлення буде підтверджено.",
+        "thank_you_confirmed_order_with_draft_payment": "Ми повідомимо вас, якщо нам знадобиться додаткова інформація або коли ваше замовлення буде підтверджено.",
+        "thank_you_confirmed_order_with_draft_pick_up": "Ми повідомимо вас, якщо нам знадобиться додаткова інформація або коли ваше замовлення буде підтверджено.",
+        "thank_you_unconfirmed_items_heading": {
+          "one": "Елемент не підтверджено",
+          "other": "Деякі елементи не підтверджені"
+        },
+        "thank_you_unconfirmed_items_description": {
+          "one": "З вас не стягували плату за це",
+          "other": "З вас не стягували плату за це"
+        },
+        "thank_you_confirmed_items_with_email": {
+          "one": "Ви незабаром отримаєте електронний лист із підтвердженням",
+          "other": "Ви незабаром отримаєте електронні листи з підтвердженням"
+        },
+        "thank_you_confirmed_items_with_phone": {
+          "one": "Ви незабаром отримаєте SMS-підтвердження",
+          "other": "Ви незабаром отримаєте підтверджувальні текстові повідомлення"
+        },
+        "thank_you_item_label": {
+          "one": "%{count} елемент",
+          "other": "%{count} елементів"
+        },
+        "thank_you_from_shop": "З %{shop_name}",
+        "thank_you_payments_app_failed_pending_payment": "З вас не стягнули плату за ваше замовлення. Поверніться до кошика, щоб переглянути своє замовлення та оплатити ще раз.",
+        "thank_you_payments_app_failed_pending_payment_payment": "З вас не стягнули плату за ваше замовлення. Поверніться до кошика, щоб переглянути своє замовлення та оплатити ще раз.",
+        "thank_you_payments_app_failed_pending_payment_pick_up": "З вас не стягнули плату за ваше замовлення. Поверніться до кошика, щоб переглянути своє замовлення та оплатити ще раз.",
+        "thank_you_payments_app_pending_payment_description_default_with_missing": "Зв'яжіться з нами електронною поштою або телефоном, щоб отримати підтвердження замовлення.",
+        "thank_you_payments_app_pending_payment_description_default_with_missing_payment": "Зв'яжіться з нами електронною поштою або телефоном, щоб отримати підтвердження замовлення.",
+        "thank_you_payments_app_pending_payment_description_default_with_missing_pick_up": "Зв'яжіться з нами електронною поштою або телефоном, щоб отримати підтвердження замовлення.",
+        "thank_you_payments_app_pending_payment_description_default_with_email_and_phone": "Незабаром ви отримаєте електронний лист із підтвердженням та номером вашого замовлення.",
+        "thank_you_payments_app_pending_payment_description_default_with_email_and_phone_payment": "Незабаром ви отримаєте електронний лист із підтвердженням та номером вашого замовлення.",
+        "thank_you_payments_app_pending_payment_description_default_with_email_and_phone_pick_up": "Незабаром ви отримаєте електронний лист із підтвердженням та номером вашого замовлення.",
+        "thank_you_payments_app_pending_payment_description_default_with_email": "Незабаром ви отримаєте електронний лист із підтвердженням та номером вашого замовлення.",
+        "thank_you_payments_app_pending_payment_description_default_with_email_payment": "Незабаром ви отримаєте електронний лист із підтвердженням та номером вашого замовлення.",
+        "thank_you_payments_app_pending_payment_description_default_with_email_pick_up": "Незабаром ви отримаєте електронний лист із підтвердженням та номером вашого замовлення.",
+        "thank_you_payments_app_pending_payment_description_default_with_phone": "Незабаром ви отримаєте SMS-підтвердження з номером вашого замовлення.",
+        "thank_you_payments_app_pending_payment_description_default_with_phone_payment": "Незабаром ви отримаєте SMS-підтвердження з номером вашого замовлення.",
+        "thank_you_payments_app_pending_payment_description_default_with_phone_pick_up": "Незабаром ви отримаєте SMS-підтвердження з номером вашого замовлення."
       }
     }
   }
