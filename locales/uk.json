@@ -2219,13 +2219,71 @@
                 "due_on_receipt": "Ви отримаєте рахунок-фактуру на залишок коштів.",
                 "due_on_date": "Залишок має бути сплачений до {{dueDate}} ."
               }
+            },
+            "deposit": {
+              "due_later": "{{depositAmount}} буде сплачена після підтвердження вашого замовлення. Залишок коштів буде на умовах {{translatedName}} .",
+              "due_on_fulfillment": "{{depositAmount}} буде сплачена після підтвердження вашого замовлення. Залишок коштів буде сплачено після виконання замовлення.",
+              "due_on_receipt": "{{depositAmount}} буде сплачена після підтвердження вашого замовлення. Залишок коштів буде сплачено пізніше.",
+              "due_on_date": "{{depositAmount}} буде сплачена після підтвердження вашого замовлення. Залишок коштів буде сплачено {{dueDate}} ."
             }
-          }
-        }
+          },
+          "paid": {
+            "title": "Платно",
+            "title_with_date": "Оплачено {{date}}",
+            "description": "Ваше замовлення повністю оплачено."
+          },
+          "refund": {
+            "title": "Повернено кошти",
+            "title_with_date": "Повернено кошти {{date}}",
+            "description_full_refund": "Ви отримали повне відшкодування за це замовлення.",
+            "description_single_refund": "Ви отримали часткове відшкодування за це замовлення.",
+            "description_multiple_refunds": "Ви отримали часткове відшкодування за це замовлення."
+          },
+          "canceled": {
+            "title": "Платіж скасовано",
+            "description": "З вас не стягували плату."
+          },
+          "pay_now": "Сплатити зараз",
+          "pay_now_accessibility_label": "Оплатіть зараз за замовлення {{orderName}}",
+          "title": "Статус платежу"
+        },
+        "order_timeline": {
+          "expand_events_label": "Показати деталі",
+          "expand_events_accessibility_label": "Показати деталі чернетки замовлення",
+          "hide_events_label": "Приховати деталі",
+          "hide_events_accessibility_label": "Приховати деталі чернетки замовлення"
+        },
+        "subtitle": "Надіслано {{date}}",
+        "title": "Замовлення {{name}}"
       },
       "account_information": {
         "company_card_name_label": "Назва компанії",
         "company_card_section_accessibility_label": "Компанія"
+      },
+      "payment_methods": {
+        "payment_delete": {
+          "description_without_replacement": "Цей спосіб оплати більше не буде доступний для майбутніх покупок у цьому місці.",
+          "description_with_replacement": "Видалення цього способу оплати вплине на попередньо авторизовані платежі для цього місця. Замініть його альтернативним способом оплати, щоб продовжувати отримувати майбутні замовлення."
+        },
+        "payment_details": {
+          "order_label": "Замовлення {{name}}",
+          "draft_label": "Чернетка замовлення {{name}}"
+        }
+      },
+      "purchase_order_number": {
+        "add_accessibility_label": "Додати номер замовлення на замовлення",
+        "add_modal_title": "Додати номер замовлення на замовлення",
+        "cancel": "Скасувати",
+        "close_modal_accessibility_label": "Закрити модальне вікно номера замовлення на замовлення",
+        "discard": "Відкинути",
+        "discard_changes_modal_title": "Відхилити зміни?",
+        "edit_accessibility_label": "Редагувати номер замовлення на замовлення",
+        "edit_modal_title": "Редагувати номер замовлення на замовлення",
+        "empty_state": "Без номера замовлення на замовлення",
+        "modal_po_number_input_label": "Номер замовлення на замовлення",
+        "modal_po_number_input_max_length_error": "Номери замовлень на замовлення можуть мати максимальну кількість символів {{maxLength}} .",
+        "save": "Зберегти",
+        "title": "Номер замовлення на замовлення {{poNumber}}"
       }
     },
     "order_details": {
@@ -2597,6 +2655,114 @@
         "invalid": {
           "invalid_email": "Введіть дійсну адресу електронної пошти",
           "invalid_code": "Введіть правильний 6-значний код"
+        }
+      }
+    },
+    "errors": {
+      "address_deletion_error": {
+        "description": "Виникла проблема з видаленням цієї адреси. Спробуйте ще раз або оновіть сторінку."
+      },
+      "addresses_loading_issue": {
+        "description": "Помилка підключення. Перевірте підключення до Інтернету та спробуйте ще раз."
+      },
+      "banner_title": {
+        "one": "Виникла помилка {{count}}",
+        "other": "Є {{count}} помилок"
+      },
+      "failed_address_creation": {
+        "description": "Виникла проблема зі створенням вашої адреси. Спробуйте оновити цю сторінку або перевірте підключення до Інтернету."
+      },
+      "failed_address_update": {
+        "description": "Виникла проблема з оновленням вашої адреси. Спробуйте оновити цю сторінку або перевірте підключення до Інтернету."
+      },
+      "load_address_form_error": {
+        "title": "Не вдалося завантажити форму адреси",
+        "description": "Не вдалося завантажити форму адреси.",
+        "refresh_button": "Оновити сторінку"
+      },
+      "load_orders_error": {
+        "title": "Не вдалося завантажити замовлення",
+        "description": "Спробуйте ще раз або поверніться пізніше.",
+        "retry_button": "Повторити спробу"
+      },
+      "load_paypal_error": {
+        "description": "Виникла проблема із завантаженням PayPal. Спробуйте ще раз."
+      },
+      "logout_everywhere": {
+        "description": "Щось пішло не так під час виходу. Спробуйте ще раз."
+      },
+      "no_access_to_locations": {
+        "description": "У вас немає доступу до жодних локацій"
+      },
+      "not_found": {
+        "description": "Перевірте URL-адресу або спробуйте ще раз через кілька хвилин.",
+        "title": "Виникла проблема із завантаженням цієї сторінки"
+      },
+      "order_not_found": {
+        "description": "Цього замовлення не існує, або у вас немає дозволу на його перегляд.",
+        "title": "Замовлення не знайдено"
+      },
+      "profile_update_error": {
+        "description": "Виникла проблема з оновленням вашого профілю. Спробуйте оновити цю сторінку або перевірте підключення до Інтернету."
+      },
+      "profile_name_update_error": {
+        "description": "Виникла проблема з оновленням вашого імені. Спробуйте оновити цю сторінку або перевірте підключення до Інтернету."
+      },
+      "retry_action_label": "Повторити спробу",
+      "resend_link": {
+        "too_many_requests": "Забагато запитів. Спробуйте пізніше.",
+        "generic": "Невдалий запит"
+      },
+      "load_extension_error": {
+        "title": "Помилка",
+        "description": "Оновіть цю сторінку або спробуйте ще раз через кілька хвилин.",
+        "refresh_button": "Оновити сторінку"
+      }
+    },
+    "throttle": {
+      "too_many_attempts": {
+        "message": "Забагато спроб",
+        "description": "Будь ласка, спробуйте ще раз через кілька хвилин"
+      }
+    },
+    "payment_methods": {
+      "replacement_payment_method_title": "Замінний спосіб оплати",
+      "title": "Способи оплати",
+      "add_payment_method_button": "Додати спосіб оплати",
+      "add_payment_method_dropdown": {
+        "credit_or_debit_card": "Кредитна або дебетова картка",
+        "bank_account": "Банківський рахунок"
+      },
+      "generic_error": "Щось пішло не так. Спробуйте ще раз.",
+      "bank_account": {
+        "loading_accessibility_message": "Кнопка банківського рахунку завантажується",
+        "iframe_title_accessibility_label": "Налаштування банківського рахунку",
+        "display_name": "Банківський рахунок"
+      },
+      "add_payment_method_banner": "Додайте спосіб оплати для швидшого оформлення замовлення або попередньо авторизованих послуг",
+      "no_payment_methods_banner": "Не додано жодних способів оплати",
+      "edit_payment_method_button_accessibility_label": "Редагувати {{paymentMethodName}} що закінчується на {{lastDigits}}",
+      "edit_payment_method_brand_button_accessibility_label": "Редагувати {{paymentMethodName}}",
+      "delete_payment_method_button": "Видалити",
+      "delete_payment_method_button_accessibility_label": "Видалити {{paymentMethodName}}",
+      "back_button": "Назад",
+      "back_button_accessibility_label": "Назад до {{paymentMethodStepTitle}}",
+      "default": "За замовчуванням",
+      "generic_card": "Картка",
+      "expiration_warning_button_accessibility_label": "Показати попередження про закінчення терміну дії для {{paymentMethodName}} що закінчується на {{lastDigits}}",
+      "expires_soon": "Термін дії цієї картки скоро закінчується",
+      "expired": "Термін дії цієї картки закінчився",
+      "card_update_consent": "Цей спосіб оплати буде збережено для майбутніх покупок.",
+      "card_update_consent_subscriptions": "Цей спосіб оплати буде збережено для майбутніх покупок і може бути використаний для будь-яких регулярних або відкладених покупок.",
+      "digital_wallet_title": "Цифровий гаманець",
+      "credit_or_debit_card_title": "Кредитна або дебетова картка",
+      "google_pay": {
+        "iframe_title_accessibility_label": "Додати спосіб оплати Google Pay",
+        "loading_accessibility_message": "Завантаження Google Pay",
+        "loading": "Завантаження Google Pay",
+        "errors": {
+          "generic": "Виникла проблема з Google Pay. Спробуйте ще раз або скористайтеся іншим способом оплати.",
+          "missing_billing_address": "Для Google Pay потрібна платіжна адреса. Додайте її до свого облікового запису."
         }
       }
     }
