@@ -1,0 +1,404 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "shopify": {
+    "sentence": {
+      "two_words_connector": " і ",
+      "last_word_connector": ", та "
+    },
+    "checkout": {
+      "address_management": {
+        "confirm_address_deletion": "Ви впевнені, що хочете видалити адресу {{address}} ?"
+      },
+      "general": {
+        "page_title": "Оформлення замовлення",
+        "error_page_title": "Помилка",
+        "skip_to_content": "Перейти до змісту",
+        "breadcrumb": "Хлібна крихта",
+        "continue_button_label": "Продовжити",
+        "complete_purchase_button_label": "Завершити замовлення",
+        "pay_now_button_label": "Сплатити зараз",
+        "authenticate_purchase_button_label": "Автентифікувати платіж",
+        "edit_link_label": "Редагувати",
+        "all_rights_reserved": "Всі права захищено %{shop_name}",
+        "print_policies_link_label": "Друк",
+        "cart": "Кошик",
+        "close_modal_label": "Закрити",
+        "close_notice_label": "Закрити",
+        "expand_notice_label": "Переглянути більше",
+        "continue_to_shipping_method": "Продовжити доставку",
+        "continue_to_payment_method": "Перейти до оплати",
+        "continue_to_review": "Переглянути замовлення",
+        "back_to_cart": "Повернутися до кошика",
+        "back_to_contact_information": "Повернутися до інформації",
+        "back_to_shipping_method": "Повернення до доставки",
+        "back_to_payment_method": "Повернутися до оплати",
+        "choose_shipping_method": "Виберіть спосіб доставки",
+        "choose_payment_method": "Виберіть спосіб оплати",
+        "choose_billing_address": "Виберіть платіжну адресу",
+        "contact_us_html": "Зв'яжіться з нами для отримання додаткової інформації",
+        "autocomplete_title": "Пропозиції",
+        "autocomplete_single_item": "1 товар доступний",
+        "autocomplete_multi_item": "Доступно {{number}} товарів",
+        "autocomplete_close": "Закрити пропозиції",
+        "forwarding_indicator": {
+          "new_window": "Відкривається в новому вікні.",
+          "external": "Відкриває зовнішній вебсайт.",
+          "external_and_new_window": "Відкриває зовнішній веб-сайт у новому вікні."
+        },
+        "checkout_context": {
+          "step_one": "%{shop_name} - Оформити замовлення"
+        },
+        "tooltip_accessibility_label": "Більше інформації",
+        "qr_code": "QR-код",
+        "errors": {
+          "only_empty_terms_accepted": "Ця політика приймає лише порожні терміни.",
+          "session_identifier_not_unique_error": "Щось пішло не так з вашим замовленням, спробуйте оформити замовлення ще раз.",
+          "line_item_limit_reached": "Досягнуто максимальної кількості позицій.",
+          "session_is_already_finished": "Цей сеанс оформлення замовлення вже завершено.",
+          "merchandise": {
+            "only_value_constraint": "У введених даних про товари дозволено вводити лише точні значення.",
+            "merchandise_not_found": "Товар не знайдено.",
+            "merchandise_variant_not_found": "Варіант товару не знайдено.",
+            "merchandise_not_applicable": "Варіант товару неможливо придбати.",
+            "mixed_currencies": "У розділі \"Оформлення замовлення\" є позиції з різними валютами.",
+            "bundle_products_not_supported_for_b2b": "Комплектні товари не можна додавати до замовлень B2B для цього місцезнаходження.",
+            "gift_card_quantity_mismatch": "Під час визначення кодів подарункових карток кількість товару в позиції та кількість кодів подарункових карток повинні збігатися.",
+            "gift_card_not_supported": "Подарункові картки не підтримуються в цій касі.",
+            "gift_card_not_unique": "Подарункова карта з кодом {{code}} зустрічається кілька разів у цій процедурі оформлення замовлення. Коди форматуються перед порівнянням.",
+            "gift_card_used": "Код подарункової картки {{code}} вже призначено подарунковій картці. Коди форматуються перед порівнянням.",
+            "gift_card_invalid": "Код подарункової картки {{code}} недійсний.",
+            "gift_card_code_changed": "Код подарункової картки {{proposed_code}} було змінено на {{formatted_code}} відповідно до правил форматування.",
+            "gift_card_with_attributes_not_supported": "Подарункові картки з власними атрибутами не підтримуються в цій касі.",
+            "gift_card_with_components_not_supported": "Подарункові картки з компонентами не підтримуються в цій касі.",
+            "selling_plan_mismatch": "Підписку оновлено.",
+            "selling_plan_not_supported": "Підписки не підтримуються.",
+            "selling_plan_not_supported_b2b": "Підписки не підтримуються для оформлення замовлення B2B.",
+            "price_mismatch": "Попередньо запропонована ціна на цей товар була недійсною та була оновлена.",
+            "inventory_not_found": "Не знайдено товару на складі.",
+            "product_not_published": "Продукт не опубліковано.",
+            "product_not_published_in_buyer_location": "Товар не опубліковано в місці розташування покупця.",
+            "duplicated_stable_id": "Ця лінійка товарів має той самий ідентифікатор stable-ID, що й інша лінійка.",
+            "minimum_quantity_not_met": "Кількість деяких товарів не відповідає мінімально необхідному.",
+            "maximum_quantity_exceeded": "Кількість деяких товарів перевищує максимально дозволену.",
+            "quantity_increment_not_met": "Кількість деяких товарів не відповідає лімітам замовлення.",
+            "quantity_rules_not_met": "Кількість деяких товарів не відповідає лімітам замовлення.",
+            "bundle_requires_components": "Цей комплект товарів не має компонентів.",
+            "title_too_long": "Назва товару занадто довга.",
+            "title_empty": "Назва товару порожня."
+          },
+          "buyer_identity": {
+            "business_customer_does_not_match_company": "Контактна особа компанії не має доступу до інформації про компанію.",
+            "customer_account_required": "Ви повинні увійти, щоб продовжити.",
+            "company_location_required": "Клієнт повинен вибрати місцезнаходження компанії, щоб продовжити.",
+            "company_purchase_permission_required": "Клієнт не має дозволу розміщувати замовлення компанії.",
+            "personal_order_not_allowed": "Особисті замовлення в цьому магазині не приймаються.",
+            "lost_access_to_company": "Клієнт втратив доступ до будь-якої компанії.",
+            "contact_info_does_not_match_customer_account": "Контактна інформація має збігатися з обліковим записом, у який ви ввійшли.",
+            "phone_number_does_not_match_expected_pattern": "Вказаний номер телефону не відповідає очікуваному шаблону.",
+            "email_required": "Під час придбання товару за підпискою потрібна електронна адреса.",
+            "email_domain_is_invalid": "Цей вказаний домен неможливо розв'язати.",
+            "missing_contact_method": "Відсутній дійсний спосіб зв'язку.",
+            "checkout_completion_target_is_missing": "Відсутнє цільове значення для завершення оформлення замовлення.",
+            "invalid_customer_profile": "Надано недійсний профіль клієнта.",
+            "customer_profile_access_restricted": "Офіційний кабінет не має дозволу на доступ до профілю клієнта.",
+            "checkout_completion_target_is_invalid_proc": "Недійсна ціль завершення оформлення замовлення.",
+            "buyer_identity_presentment_currency_does_not_match": "Виникла проблема з обробкою вашого замовлення. Спробуйте ще раз через кілька хвилин."
+          },
+          "delivery": {
+            "only_one_delivery_line_allowed": "Кошик повинен мати лише один рядок доставки.",
+            "wrong_number_of_delivery_lines": "Для кожної групи товарів необхідно вказати лінію доставки.",
+            "external_delivery_promise_error": "Помилка отримання зовнішньої обіцянки доставки.",
+            "options_instructions_invalid": "Вказані інструкції не відповідають очікуваному шаблону.",
+            "destination_address_required": "Для продовження потрібна адреса призначення.",
+            "pickup_points_unavailable": "Пункти видачі наразі недоступні.",
+            "local_pickup_delivery_line_detail_changed": "Щоб продовжити, необхідно змінити поточну стратегію доставки на місцевому самовивозі.",
+            "selected_pickup_option_no_longer_available": "Раніше вибраний варіант самовивозу більше недоступний.",
+            "local_pickup_no_delivery_strategy_available": "Не знайдено доступної стратегії доставки з місцевим самовивозом.",
+            "origin_location_id_required": "Ідентифікатор місця відправлення потрібен, коли запитується спосіб доставки RETAIL.",
+            "invalid_origin_location_id": "Не вдалося знайти місцезнаходження, що відповідає ідентифікатору початкового місцезнаходження."
+          },
+          "captcha": {
+            "token_invalid": "Наданий токен капчі недійсний. Заповніть нову капчу, щоб продовжити оформлення замовлення.",
+            "token_not_valid_for_session": "Надана капча не може бути використана для цієї оплати."
+          },
+          "fx_reconciliation_override": {
+            "shop_currency_mismatch": "Отримана сума має бути у валюті магазину."
+          },
+          "checkout_source": {
+            "revoked": "Ця каса більше недоступна."
+          }
+        },
+        "full_price": "Повна ціна:",
+        "title": "Оформлення замовлення - {{shopName}}",
+        "full_title": "{{pageTitle}} - {{shopName}} - Оформлення замовлення",
+        "loading": "Завантаження…",
+        "loading_title": "Оформлення замовлення - {{shopName}}",
+        "google_map_title": "Карта Google",
+        "confirm_order_button_label": "Підтвердити замовлення",
+        "submit_order_button_label": "Надіслати замовлення",
+        "submit_for_review_button_label": "Надіслати на розгляд",
+        "submit_for_review_notice_label": "Оплата не буде здійснена, доки ваше замовлення не буде перевірено",
+        "continue_to_payment_plans_button_label": "Перейти до планів оплати",
+        "back_button_label": "Повернення",
+        "choose_delivery_strategy": "Виберіть спосіб доставки",
+        "autocomplete_zero_item": "Немає доступних товарів",
+        "autocomplete_powered_by_google": "Працює на базі {{brandName}}",
+        "submit": "Надіслати",
+        "processing": "Обробка…",
+        "stepper": {
+          "increase": "Збільшити {{type}}",
+          "decrease": "Зменшити {{type}}",
+          "minimum_reached": "Досягнуто мінімальної суми {{value}}",
+          "maximum_reached": "Досягнуто максимуму {{value}}"
+        },
+        "remove_chip": "Видалити елемент",
+        "remove_item": "Видалити %{label}",
+        "remove_tag": "Видалити тег",
+        "dates": {
+          "weekdays": {
+            "monday": "Понеділок",
+            "tuesday": "Вівторок",
+            "wednesday": "Середа",
+            "thursday": "Четвер",
+            "friday": "П'ятниця",
+            "saturday": "Субота",
+            "sunday": "Неділя"
+          },
+          "weekdays_abbreviation": {
+            "monday": "Мо",
+            "tuesday": "Вт",
+            "wednesday": "Ми",
+            "thursday": "Чт",
+            "friday": "Пт",
+            "saturday": "Сб",
+            "sunday": "Су"
+          },
+          "months": {
+            "january": "Січень",
+            "february": "Лютий",
+            "march": "Березень",
+            "april": "Квітень",
+            "may": "Травень",
+            "june": "Червень",
+            "july": "Липень",
+            "august": "Серпень",
+            "september": "Вересень",
+            "october": "Жовтень",
+            "november": "Листопад",
+            "december": "Грудень"
+          }
+        },
+        "datepicker": {
+          "show_previous_month": "Показати попередній місяць, {{month}} {{year}}",
+          "show_next_month": "Показати наступного місяця, {{month}} {{year}}",
+          "range_start": "Початок діапазону",
+          "in_range": "У межах досяжності",
+          "range_end": "Кінець діапазону"
+        },
+        "map": {
+          "cluster_title": {
+            "one": "Кластер маркера {{number}}",
+            "other": "Кластер маркерів {{number}}"
+          }
+        },
+        "sheet": {
+          "expand": "Розгорнути"
+        },
+        "dropzone": {
+          "add_file": "Додати файл",
+          "invalid_file_type": "Тип файлу не підтримується",
+          "dragged_over": "Перетягніть файл для завантаження"
+        }
+      },
+      "contact": {
+        "title": "Інформація",
+        "address_title": "Адреса",
+        "shipping_used_as_billing_notice": "Ця адреса також буде використана як ваша платіжна адреса для цього замовлення.",
+        "delivery_option_title": "Спосіб доставки",
+        "contact_method_title": "Контакти",
+        "email_label": "Електронна пошта",
+        "email_rollup_accessibility_label": "Варіанти електронної пошти",
+        "email_placeholder": "Електронна пошта",
+        "email_or_phone_label": "Електронна пошта або номер мобільного телефону",
+        "email_or_phone_placeholder": "Електронна пошта або номер мобільного телефону",
+        "stored_addresses_label": "Збережені адреси",
+        "available_addresses_label": "Доступні адреси",
+        "new_address_label": "Використати нову адресу",
+        "first_name_label": "Ім'я",
+        "optional_first_name_label": "Ім'я (необов'язково)",
+        "last_name_label": "Прізвище",
+        "company_label": "Компанія",
+        "company_attention_label": "Компанія/Увага",
+        "optional_company_attention_label": "Компанія/Увага (необов'язково)",
+        "optional_company_label": "Компанія (необов'язково)",
+        "address1_label": "Адреса",
+        "address2_label": "Квартира, люкс тощо.",
+        "optional_address2_label": "Апартаменти, люкси тощо (необов'язково)",
+        "city_label": "Місто",
+        "country_label": "Країна/регіон",
+        "country_code": "Код країни/регіону",
+        "province_label": "Провінція",
+        "province_placeholder": "Провінція",
+        "county_label": "Округ",
+        "county_placeholder": "Округ",
+        "state_label": "Штат",
+        "state_placeholder": "Штат",
+        "region_label": "Регіон",
+        "region_placeholder": "Регіон",
+        "region_none": "Не вибрано"
+      },
+      "order_summary": {
+        "payment_terms_totals": {
+          "due_on_fulfillment": "Загальна сума до виконання",
+          "due_on_fulfillment_next": "Підлягає виконанню",
+          "due_on_receipt": "Загальна сума до сплати при отриманні",
+          "due_later_checkout_to_draft": "Загальна сума до сплати пізніше",
+          "total_paid": "Всього сплачено"
+        },
+        "maximum_discount_code_limit_reached": "Ви досягли максимальної кількості кодів знижок. Видаліть існуючий код, щоб використовувати <strong style=\"text-transform:uppercase\">%{code}</strong> .",
+        "discount_code_application_failed": "<strong style=\"text-transform:uppercase\">%{code}</strong> зараз не працює. Зверніться до нас за допомогою.",
+        "due_on_fulfillment": "Підлягає виконанню",
+        "subscriptions": "Підписки",
+        "duties_label": "Обов'язки",
+        "duties_and_taxes_label": "Мита та податки",
+        "error_duties_tooltip": "Це замовлення відправляється з іншої країни, тому під час доставки можуть стягуватися мита та податки.",
+        "may_be_charged_on_delivery": "Може стягуватися плата при доставці",
+        "total_updated_label_with_price": "Оновлена ​​загальна ціна: %{totalPrice}",
+        "updated_shipping_method": "Оновлений спосіб доставки: %{shipping_method}",
+        "recurring_payments": "Регулярні платежі",
+        "recurring_total_multiple_label": "Це замовлення має періодичну оплату за кілька товарів.",
+        "deferred_total_due_date_label": "Загальна сума до сплати {{date}}",
+        "deferred_total_due_date_label_next": "Термін виконання %{дата}",
+        "full_price": "Повна ціна: %{price}",
+        "custom_discount": "Спеціальна знижка",
+        "expand_component_information": {
+          "one": "Показати %{count} елемент",
+          "other": "Показати %{count} елементів"
+        },
+        "collapse_component_information": {
+          "one": "Приховати елемент %{count}",
+          "other": "Приховати %{count} елементів"
+        },
+        "component_quantity_title": "%{кількість} × %{назва_продукту}",
+        "discount_discovery": {
+          "add_code": "Додати знижку",
+          "merchandise_quantity_label": {
+            "one": "%{count} елемент",
+            "other": "%{count} елементів"
+          }
+        },
+        "alternative_payment_currency_total": "Стягнуто як %{amount_due}"
+      },
+      "shipping": {
+        "title": "Доставка",
+        "delivery_title": "Доставка",
+        "shipping_method_title": "Спосіб доставки",
+        "shipping_method_rollup_accessibility_label": "Варіанти способів доставки",
+        "shipping_method_one_time_purchase_group_title": "Одноразова покупка",
+        "shipping_method_first_shipment_group_title": {
+          "one": "Перша відправка",
+          "other": "Перші поставки"
+        },
+        "shipping_method_subscription_group_title": "Підписка",
+        "shipping_method_recurring_shipments_group_title": {
+          "one": "Повторювана доставка",
+          "other": "Повторювані відправлення"
+        },
+        "subscription_shipping": "Доставка за передплатою",
+        "subscription_local_delivery": "Місцева доставка за передплатою",
+        "subscription_pickup": "Отримання передплати",
+        "waiting_on_rate_notice": "Отримання доступних тарифів на доставку…",
+        "waiting_on_pickup_location_notice": "Отримання доступних місць забору…",
+        "no_rates_for_cart_or_destination_notice": "Для вашого кошика або адреси немає доступних способів доставки",
+        "no_pickup_location_notice": "Принаймні один з ваших товарів недоступний для самовивозу",
+        "no_rates_for_country_notice": "Вартість доставки для цієї адреси не знайдено.",
+        "no_rates_contact_notice": "Зв'яжіться з нами для отримання додаткової інформації",
+        "free_rate_label": "Безкоштовно",
+        "cheapest_rate_label": "Найдешевший",
+        "please_enter_your_shipping_information_notice": "Будь ласка, введіть інформацію про доставку.",
+        "estimated_delivery_date": {
+          "one": "%{count} робочий день",
+          "other": "%{count} робочих днів"
+        },
+        "estimated_delivery_date_range": "від %{minimum} до %{maximum} робочих днів",
+        "estimated_delivery_time": "Орієнтовна кількість днів доставки (% часу)",
+        "estimated_delivery_time_range": "Орієнтовна доставка %{min_time}–%{max_time}",
+        "delivery_today": "Доставка в той самий день %{time}",
+        "delivery_tomorrow": "Доставка наступного дня %{time}",
+        "two_day_delivery": "2-денна доставка %{time}",
+        "delivery": "Доставка %{час}",
+        "arrives_time": "Прибуття %{time}",
+        "arrives_time_range": "Прибуття %{min_time}–%{max_time}",
+        "estimated_time": "Орієнтовний %{час}",
+        "estimated_time_range": "Орієнтовний %{min_time}–%{max_time}",
+        "default_description": "Відправлення протягом 1 робочого дня",
+        "unbranded_default_description": "Готово до відправки",
+        "shipping_line_phone_label": "Номер мобільного телефону (обов'язково)",
+        "shipping_line_phone": "Ваш кур'єр може використовувати цей номер, щоб зв'язатися з вами.",
+        "shipping_line_delivery_phone_label": "Номер мобільного телефону",
+        "shipping_line_delivery_phone": "З вами можуть зв'язатися з оновленнями щодо вашої доставки.",
+        "optional_shipping_line_delivery_instructions_label": "Інструкції щодо доставки (необов'язково)",
+        "shipping_line_delivery_instructions": "Введіть необхідну інформацію, таку як коди дверей або інструкції щодо повернення багажу.",
+        "other_method": {
+          "zero": "Інших методів немає",
+          "one": "%{count} інший метод доступний за адресою",
+          "other": "%{count} інші методи доступні, починаючи з"
+        },
+        "shipping_rate_discounted_amount": "Було: %{original_amount}. Зараз: %{amount}",
+        "local_delivery": "Місцева доставка",
+        "prime_not_available": {
+          "default": "Доставка Prime недоступна для вашого замовлення. Варіанти доставки оновлено."
+        },
+        "subscription_delivery_description": {
+          "free_shipping_cycles": {
+            "one": "Безкоштовна доставка для ще %{count} доставки",
+            "other": "Безкоштовна доставка для ще %{count} доставок"
+          },
+          "free_shipping_cycles_delivery_not_included": {
+            "one": "Безкоштовна доставка для %{count} доставки",
+            "other": "Безкоштовна доставка для %{count} доставок"
+          },
+          "first_n_order_free_with_cycle": {
+            "one": "Безкоштовна доставка для доставки понад %{count}, тоді %{recurring_order_shipping_price}",
+            "other": "Безкоштовна доставка для %{count} додаткових доставок, тоді %{recurring_order_shipping_price}"
+          },
+          "first_n_order_free_with_cycle_delivery_not_included": {
+            "one": "Безкоштовна доставка для %{count} доставки, потім %{recurring_order_shipping_price}",
+            "other": "Безкоштовна доставка для %{count} доставок, потім %{recurring_order_shipping_price}"
+          },
+          "max_cycles_base_shipping": {
+            "one": "Ще %{count} доставки за %{shipping_price}",
+            "other": "Ще %{count} доставок за %{shipping_price} кожна"
+          },
+          "max_cycles_base_shipping_delivery_not_included": {
+            "one": "Доставка %{count} за %{shipping_price}",
+            "other": "Ще %{count} доставок за %{shipping_price} кожна"
+          },
+          "prepaid_free_shipping_with_cycles": {
+            "one": "Безкоштовна доставка протягом першого %{cycle}, а потім %{recurring_order_shipping_price}",
+            "other": "Безкоштовна доставка протягом першого %{cycle}, а потім %{recurring_order_shipping_price}"
+          },
+          "prepaid_order_one_cycle": {
+            "one": "%{shipping_price} для додаткової доставки %{count}",
+            "other": "%{shipping_price} для ще %{count} доставок (%{per_delivery_cost})"
+          },
+          "prepaid_order_one_cycle_delivery_not_included": {
+            "one": "%{shipping_price} для доставки %{count}",
+            "other": "%{shipping_price} для %{count} доставок (%{per_delivery_cost})"
+          },
+          "prepaid_order_no_cycle": {
+            "one": "%{shipping_price} для додаткової доставки %{count}, а потім %{recurring_order_shipping_price}"
+          }
+        }
+      }
+    }
+  }
+}
